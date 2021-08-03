@@ -37,11 +37,11 @@ function sendmail() {
     var subject = $('#subject').val();
     var message = $('#text').val();
     // var body = $('#body').val();
-    var Body = 'mail: ' + mail + '<br> nom: ' + nom + '<br> number: ' + number +'<br> Object: ' + subject+ '<br>message: ' + message;
+    var Body = 'mail: ' + email + '<br> nom: ' + nom + '<br> number: ' + number +'<br> Object: ' + subject+ '<br>message: ' + message;
     Email.send({
-        SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+        SecureToken: "00520c40-6c0d-4e55-a8f9-6d8a0a92f490",
         To: 'edisontchondo@gmail.com',
-        From: "edisontchondo@gmail.com",
+        From: 'edisontchondo@gmail.com',
         Subject: "Nouveau message de test ",
         Body: Body
     }).then(
