@@ -39,7 +39,7 @@ function sendmail() {
     // var body = $('#body').val();
     var Body = 'mail: ' + email + '<br> nom: ' + nom + '<br> number: ' + number +'<br> Object: ' + subject+ '<br>message: ' + message;
     Email.send({
-        SecureToken: "00520c40-6c0d-4e55-a8f9-6d8a0a92f490",
+        SecureToken: "08ddfe7c-3df4-4f3c-8f54-c76c5ce9ddc6",
         To: 'edisontchondo@gmail.com',
         From: 'edisontchondo@gmail.com',
         Subject: "Nouveau message de test ",
