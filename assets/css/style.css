@@ -424,6 +424,9 @@ header .nav-items {
           transition: 0.5s;
           display: none; }
           @media (min-width: 768px) and (max-width: 991.98px) {
+            iframe{
+              posi
+            }
             .bg-04 .main-team-card .team-setup .team-items .team-user-social {
               top: 40%; } }
           .bg-04 .main-team-card .team-setup .team-items .team-user-social ol li {

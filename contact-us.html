@@ -88,20 +88,24 @@
 
                      <div class="sup-card-contact-0a">
                          <div class="contact-a1">
-                             <form method="POST" class="container" action="javascript:sendmail()">
+                             <form method="POST" class="container needs-validation" novalidate action="javascript:sendmail()">
                                  <div class="dived d-flex">
                                      <div class="form-group">
                                          <div class="form-sup">
                                              <div class="cal-01">
-                                                 <input type="name" name="name" id="name" class="form-control"
-                                                     placeholder="Entrer votre Nom et Prenom">
+                                                 <input type="name" for="validationCustom01" name="name" id="name" class="form-control needs-validation"
+                                                     placeholder="Entrer votre Nom et Prenom" required>
                                                  <i class="fal fa-user-tie"></i>
+                                                 <div class="invalid-feedback">
+                                                  Entrer votre nom SVP
+                                                </div>
                                              </div>
 
                                              <div class="cal-01">
-                                                 <input type="phone" name="phone" id="phone" class="form-control"
+                                                 <input type="phone" for =" exampleInputNumber " name="phone" id="phone" class="form-control form-label"
                                                      placeholder="Numero de Telephone">
                                                  <i class="fal fa-phone"></i>
+                                                 
                                              </div>
                                          </div>
                                      </div>
@@ -109,20 +113,26 @@
                                      <div class="form-group">
                                          <div class="form-sup">
                                              <div class="cal-01">
-                                                 <input type="email" name="email" id="mail" class="form-control"
-                                                     placeholder="Enter Your Email">
+                                                 <input type="email" for="validationCustom02" name="email" id="mail" class="form-control"
+                                                     placeholder="Enter Your Email" required>
                                                  <i class="fal fa-at"></i>
+                                                 <div class="invalid-feedback">
+                                                  Entrer votre mail SVP
+                                                </div>
                                              </div>
                                              <div class="cal-01">
                                                  <input type="text" name="subject" id="subject" class="form-control"
-                                                     placeholder="Entrer l'objet du mail">
+                                                     placeholder="Entrer l'objet du mail" required>
                                                  <i class="fal fa-envelope-open-text"></i>
+                                                 <div class="invalid-feedback">
+                                                  veillez preciser l'objet du mail SVP
+                                                </div> 
                                              </div>
                                          </div>
                                      </div>
 
                                      <div class="ca-ool">
-                                         <textarea name="text" id="text" cols="80" rows="6" class="form-control"
+                                         <textarea name="text" for =" exampleInputMessage " id="text" cols="80" rows="6" class="form-control"
                                              placeholder="Message"></textarea>
                                      </div>
                                      

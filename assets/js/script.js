@@ -39,7 +39,7 @@ function sendmail() {
     // var body = $('#body').val();
     var Body = 'mail: ' + email + '<br> nom: ' + nom + '<br> number: ' + number +'<br> Object: ' + subject+ '<br>message: ' + message;
     Email.send({
-        SecureToken: "08ddfe7c-3df4-4f3c-8f54-c76c5ce9ddc6",
+        SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
         To: 'edisontchondo@gmail.com',
         From: 'edisontchondo@gmail.com',
         Subject: "Nouveau message de test ",
@@ -58,3 +58,24 @@ function sendmail() {
         }
     );
 }
+/*================================validation======================*/
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
