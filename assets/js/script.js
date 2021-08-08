@@ -37,18 +37,18 @@ function sendmail() {
     var subject = $('#subject').val();
     var message = $('#text').val();
     // var body = $('#body').val();
-    var Body = 'mail: ' + email + '<br> nom: ' + nom + '<br> number: ' + number +'<br> Object: ' + subject+ '<br>message: ' + message;
+    var Body = 'mail: ' + email + '<br> <br> nom: ' + nom + '<br> <br> number: ' + number +'<br> <br> Object: ' + subject+ '<br> <br> message: ' + message;
     Email.send({
         SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
         To: 'edisontchondo@gmail.com',
         From: 'edisontchondo@gmail.com',
-        Subject: "Nouveau message de test ",
+        Subject: "Nouveau message depuis le site de la JL2E ",
         Body: Body
     }).then(
         message => {
             //console.log (message);
             if (message == 'OK') {
-                alert('Votre message a été envoyer avec succes.');
+                alert('Votre message a été envoyer avec succes nous vous reviendrons.');
             } else {
                 console.error(message);
                 alert('Erreur veillez ressayer. ')
