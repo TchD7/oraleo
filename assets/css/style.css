@@ -218,7 +218,24 @@ header .nav-items {
       .banner .wrapper ol li a {
         color: #fff; }
 
-/* ================================ Section CSS =============================== */
+
+/* ================================ touche pour la responsive =============================== */
+@media (max-width: 767.98px) {
+
+  iframe{
+    position: relative;
+    width:22rem;
+    height:300px; 
+      }
+      .banner .wrapper {
+        margin-top:-2rem;
+      }
+      .banner .wrapper p{
+        margin: 1px;
+      }
+      
+ }
+ /* ================================ Section CSS =============================== */
 .bg-01 {
   position: relative;
   margin-top: -5rem;
