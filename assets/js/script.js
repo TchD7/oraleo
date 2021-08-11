@@ -40,8 +40,8 @@ function sendmail() {
     var Body = 'mail: ' + email + '<br> <br> nom: ' + nom + '<br> <br> number: ' + number +'<br> <br> Object: ' + subject+ '<br> <br> message: ' + message;
     Email.send({
         SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
-        To: 'edisontchondo@gmail.com',
-        From: 'noryply@JL2E.com',
+        To: 'jl2e.2020@yahoo.com',
+        From: 'noreply@JL2E.com',
         Subject: "Nouveau message depuis le site de la JL2E ",
         Body: Body
     }).then(
